@@ -21,6 +21,7 @@ dataBaseConnection();
 
 app.use(cors({
     origin: "*",
+    "https://mern-task-app.onrender.com"
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
