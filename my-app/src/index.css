@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@layer base {
+  .login .left {
+    background: linear-gradient(rgba(0, 0, 0, 80%), rgba(0, 0, 0, 50%)),
+      url("./images/pexels-hoàng-chương-2374652.jpg") center;
+    background-size: cover;
+  }
+  .register .left {
+    background: linear-gradient(rgba(0, 0, 0, 80%), rgba(0, 0, 0, 50%)),
+      url("./images/pexels-zakaria-boumliha-2827374.jpg") center;
+    background-size: cover;
+  }
+  div.inActive{
+    opacity: 0;
+    top: 50px;
+    visibility: hidden;
+    
+  }
+  div.active{
+    opacity: 1;
+    top: 60px;
+    visibility: visible;
+  }
+  div.inActiveNot{
+    opacity: 0;
+    top: 50px;
+    visibility: hidden;
+    
+  }
+  div.activeNot{
+    opacity: 1;
+    top: 60px;
+    visibility: visible;
+  }
+  .setting{
+    height: calc(100vh - 45px);
+  }
+  @media not all and (min-width: 768px) {
+    div.active {
+          top: 90px;
+          left: 0;
+          width: 100%;
+      }
+    div.inActive {
+          top: 70px;
+          left: 0;
+          width: 100%;
+      }
+    }
+    .homePage{
+      min-height: calc(100vh - 60px);
+    }
+    .leftHome,
+    .rightHome{
+      max-height: calc(100vh - 60px);
+    }
+    .vacation ul li.active{
+      background-color:rgb(126, 34, 206);
+      color: white;
+    }
+    .LikeIcon{
+      transform: rotateY(180deg);
+    }
+}
